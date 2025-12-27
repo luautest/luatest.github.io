@@ -4,13 +4,13 @@ A simple web application for generating Luau code snippets for Roblox LocalPlaye
 
 ## Features
 - Input a description of the desired script functionality
-- Generate Luau code using a template system
+- Generate Luau code using AI-powered generation (with fallback to templates)
 - Copy generated code to clipboard
 - Responsive design for various devices
 
 ## Usage
 1. Open `index.html` in a web browser
-2. Enter a description (e.g., "Make the player fly")
+2. Enter a description (e.g., "Make the player fly and teleport randomly")
 3. Click "Generate Code"
 4. Copy the generated code
 
@@ -20,13 +20,15 @@ A simple web application for generating Luau code snippets for Roblox LocalPlaye
 - `script.js`: Functionality and code generation
 - `plans/plan.md`: Design plan
 
-## Supported Keywords
-- fly: Adds flying capability
-- speed: Increases walk speed
-- jump: Enhances jump power
-- invincible: Makes player invincible
+## Code Generation
+- **AI-Powered**: Uses OpenAI GPT-4 for flexible code generation based on any description
+- **Fallback**: If AI fails, uses keyword-based templates for basic features
+- **Supported Functions**: Includes exploiter-like functions like CFrame, getfenv, pcall when appropriate
+
+## Setup
+To use AI generation, replace 'YOUR_OPENAI_API_KEY' in `script.js` with a valid OpenAI API key. For production, consider using a backend proxy for security.
 
 ## Future Enhancements
-- AI integration for more advanced code generation
+- Backend proxy for secure API key handling
 - Syntax highlighting
-- More script templates
+- More advanced prompt engineering
