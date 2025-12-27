@@ -1,0 +1,21 @@
+{
+  "name": "luau-script-generator",
+  "version": "1.0.0",
+  "description": "A web application for generating Luau code for Roblox LocalPlayer scripts.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "keywords": [
+    "luau",
+    "roblox",
+    "script",
+    "generator"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
